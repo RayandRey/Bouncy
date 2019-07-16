@@ -1,0 +1,113 @@
+.team {
+    &__content {
+        padding: 80px 100px;
+    }
+
+    &__bio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__photo {
+        width: 285px;
+        height: 364px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        text-align: right;
+        width: 45%;
+        position: relative;
+
+        &__name {
+            margin-bottom: 25px;
+
+            h3 {
+                font-family: $OpenSans;
+                font-size: 20px;
+                letter-spacing: 0.8px;
+                color: $fontMajor;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-family: $SourceSansPro;
+                font-style: italic;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.79;
+                letter-spacing: 1.4px;
+                color: $fontMajor;
+            }
+        }
+
+        &__about {
+            font-family: $OpenSans;
+            font-size: 14px;
+            line-height: 1.79;
+            letter-spacing: 0.7px;
+            color: $fontMinor;
+            margin-bottom: 45px;
+        }
+    }
+
+    .slick-dots {
+        bottom: 0;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .team {
+        &__content {
+            padding: 40px 50px;
+        }
+
+        &__bio {
+            margin-bottom: 40px;
+        }
+
+        &__photo {
+            width: 200px;
+            height: 300px;
+        }
+
+        &__info {
+
+            &__name {
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 18px;
+                    letter-spacing: 0.8px;
+                    color: $fontMajor;
+                    margin-bottom: 5px;
+                }
+
+                span {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1;
+                    letter-spacing: 1px;
+                }
+            }
+
+            &__about {
+                font-size: 14px;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

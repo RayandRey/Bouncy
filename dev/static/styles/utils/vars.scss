@@ -1,0 +1,25 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$green: #19bd9a;
+$fontMajor: #333b46;
+$fontMinor: #81868e;
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: ("phone" : 400px,
+  "phone-wide" : 480px,
+  "phablet" : 560px,
+  "tablet-small": 640px,
+  "tablet" : 768px,
+  "tablet-wide" : 1024px,
+  "desktop" : 1248px,
+  "desktop-wide": 1440px);
+
+$content-size: 1170px;
+
+// Fonts
+
+$SourceSansPro: 'Source Sans Pro', sans-serif;
+$OpenSans: "OpenSans", sans-serif;

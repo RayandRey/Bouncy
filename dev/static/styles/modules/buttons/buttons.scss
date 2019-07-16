@@ -1,0 +1,82 @@
+.button__arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s;
+    animation: shakeButtons 2s linear alternate infinite;
+
+
+    &__down {
+        border: solid $white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+    }
+
+
+    &:hover {
+        background: #2aebe7;
+
+        .button__arrow__down {
+            border-width: 0 2px 2px 0;
+        }
+
+    }
+}
+
+@keyframes shakeButtons {
+    100% {
+        transform: translateX(-50.1%);
+    }
+}
+
+
+
+.button_click {
+    font-size: 16px;
+    line-height: 0.75;
+    padding: 12px 25px;
+    background: inherit;
+    border: 1px solid $white;
+    border-radius: 19px;
+    color: $white;
+    cursor: pointer;
+    transition: background .5s;
+    box-sizing: border-box;
+    position: relative;
+
+    &:hover {
+        background: $white;
+        color: $fontMajor;
+    }
+}
+
+
+.button__toogle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__down {
+        border: solid $white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+    }
+}

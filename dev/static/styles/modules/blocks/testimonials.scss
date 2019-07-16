@@ -1,0 +1,98 @@
+.testimonials{
+    background: #f3f3f3;
+
+    &__content{
+        padding: 80px 0 50px;
+    }
+
+    &__item{
+        background: $white;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 100px 110px;
+        margin-bottom: 50px;
+        box-shadow: 0 5px 10px $fontMinor;
+    }
+
+    &__avatar{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text{
+        width: 75%;
+        font-family: $OpenSans;
+
+        p{
+            font-size: 16px;
+            line-height: 1.75;
+            letter-spacing: 0.8px;
+            color: $fontMajor;
+            margin-bottom: 25px;
+        }
+
+        h3{
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.25;
+            letter-spacing: 0.64px;
+            color: $green;
+            margin-bottom: 10px;
+        }
+
+        span{
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: 0.56px;
+            color: $fontMajor;
+        }
+    }
+}
+
+
+@media (max-width: 1000px ){
+    .testimonials{
+        &__content{
+            padding: 40px 0 50px;
+        }
+    
+        &__avatar{
+            margin-bottom: 20px;
+        }
+
+        &__item{
+            padding: 25px 25px 50px;
+            margin-bottom: 50px;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        &__text{
+            text-align: center;
+            width: 80%;
+    
+            p{
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+    
+            h3{
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1;
+                margin-bottom: 5px;
+            }
+    
+            span{
+                font-size: 14px;
+                line-height: 1;
+            }
+        }
+    }
+ } 

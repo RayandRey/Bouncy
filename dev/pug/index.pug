@@ -1,0 +1,473 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	main
+		section.home#home
+			picture
+				img(src="static/images/general/home.jpg", alt="beach")
+			.container
+				.home__content
+					h1.home__title We Are Code Cafe
+					span.home__description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+			.button__arrow
+				i.button__arrow__down
+		section.definition
+			.container
+				.definition__content
+					.definition__content-left
+						h2.definition__content__title This is Bouncy
+						p.definition__content__description 
+							|At vero eos et accusamus et iusto odio dignissimos
+							|ducimus qui blanditiis praesentium voluptatum deleniti
+							|tque corrupti quos dolores et quas molestias excepturi sint occaecati
+							|cupiditate non provident, similique sunt in culpa qui officia deserunt
+							|mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+							|facilis est et expedita distinctio.
+						a(href="#").button_click Read More
+					.definition__content-right
+						img(src="static/images/content/ipad.png", alt="ipad") 
+		section.details#about
+			.container
+				.details__content
+					.head
+						h2.head__title DETAILS ABOUT BOUNCY
+						span.head__description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					ul.switch
+						li.switch__item
+							i.far.fa-heart
+						li.switch__item
+							i.fas.fa-mouse-pointer
+						li.switch__item
+							i.far.fa-lightbulb
+					article.details__case
+						section.details__case__item
+							h3.details__case__item__title Creative Ideas
+							.details__case__item__description
+								.details__case__item__description__left At vero eos et accusamus
+											|et iusto odio dignissimos <b>ducimus</b> qui blanditiis
+											|praesentium voluptatum deleniti atque corrupti quos dolores 
+								.details__case__item__description__right At vero eos et accusamus et
+											|iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+											|deleniti atque <b>corrupti quos</b> dolores et quas molestias excepturi
+											|sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa
+											|qui officia deserunt mollitia animi,
+											|id est laborum et dolorum fuga. Et harum quidem r
+						section.details__case__item
+							h3.details__case__item__title Creative Ideas Yes
+							.details__case__item__description
+								.details__case__item__description__left At vero eos et accusamus
+											|et iusto odio dignissimos <b>ducimus</b> qui blanditiis
+											|praesentium voluptatum deleniti atque corrupti quos dolores 
+								.details__case__item__description__right At vero eos et accusamus et
+											|iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+											|deleniti atque <b>corrupti quos</b> dolores et quas molestias excepturi
+											|sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa
+											|qui officia deserunt mollitia animi,
+											|id est laborum et dolorum fuga. Et harum quidem r
+						section.details__case__item
+							h3.details__case__item__title Creative Ideas NO
+							.details__case__item__description
+								.details__case__item__description__left At vero eos et accusamus
+											|et iusto odio dignissimos <b>ducimus</b> qui blanditiis
+											|praesentium voluptatum deleniti atque corrupti quos dolores 
+								.details__case__item__description__right At vero eos et accusamus et
+											|iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+											|deleniti atque <b>corrupti quos</b> dolores et quas molestias excepturi
+											|sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa
+											|qui officia deserunt mollitia animi,
+											|id est laborum et dolorum fuga. Et harum quidem r
+		section.future__project
+			.container
+				.future__project__content
+					.head
+						h2.head__title FEATURED PROJECTS
+						span.head__description At vero eos et accusamus et
+							| iusto odio dignissimos ducimus qui blanditiis praesentium
+			ul.future__project__list
+				li.future__project__item
+					.mask
+						h2.future__project__name CAFE
+					img(src="static/images/content/futureProject/first.jpg", alt="")
+				li.future__project__item
+					.mask
+						h2.future__project__name VINTAGE
+					img(src="static/images/content/futureProject/second.jpg", alt="")
+				li.future__project__item
+					.mask
+						h2.future__project__name BRANDING
+					img(src="static/images/content/futureProject/third.jpg", alt="")
+		section.informline
+			picture
+				img(src="static/images/general/subsline.jpg", alt="sneakers")
+			.container 
+				.informline__content
+					span At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis
+					a(href="#submit").button_click Submit Now
+		section.services#services
+			.container
+				.services__content
+					.head
+						h2.head__title OUR SERVICES
+						span.head__description At vero eos et accusamus et iusto odio
+							| dignissimos ducimus qui blanditiis praesentium
+					.services__inform
+						ul.switch
+							li.switch__item
+								i.fas.fa-tools
+							li.switch__item
+								i.fas.fa-paint-roller
+							li.switch__item
+								i.fas.fa-gamepad
+							li.switch__item
+								i.fas.fa-plug
+						article.services__case
+							section.services__case__item
+								.services__case__item-colmn1
+									h3.services__case__item-title Graphic Designs
+									.services__case__item-top At vero eos et accusamus et <b>iusto</b>
+										|odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti
+									.services__case__item-bottom quos dolores et quas molestias excepturi
+										|sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia
+										|deserunt mollitia animi, id est laborum et dolorum fuga. 
+								.services__case__item-colmn2
+									.services__case__item__skills
+										svg.progress-ring(width="120" height="120")
+											circle.progress-ring__circle(stroke="#047378" stroke-width="4" 
+											cx="60" cy="60" r="52" fill="transparent")
+										span Branding
+									.services__case__item__skills
+										svg.progress-ring(width="120" height="120")
+											circle.progress-ring__circle(stroke="#047378" stroke-width="4" 
+											cx="60" cy="60" r="52" fill="transparent")
+										span WebDesign
+									.services__case__item__skills
+										svg.progress-ring(width="120" height="120")
+											circle.progress-ring__circle(stroke="#047378" stroke-width="4" 
+											cx="60" cy="60" r="52" fill="transparent")
+										span UI/UX
+		section.quote
+			picture
+				img(src="static/images/general/background.jpg", alt="background")
+			.container
+				.quote__content
+					.quote__info
+						h3.quote__title Impressed ?
+						.quote__text At vero eos et accusamus et iusto
+							| odio dignissimos ducimus qui blanditiis praesentium
+							| voluptatum deleniti atque corrupti quos dolores et quas molestias
+						p.quote__author - <b>Abdullah Noman</b> <br/>Creatice Director, <b>Code Cafe</b>
+					.quote__img
+						img(src="static/images/content/display.png", alt="display")
+		section.portfolio#portfolio
+			.container
+				.portfolio__content
+					.head
+						h2.head__title THE PORTFOLIO
+						span.head__description At vero eos et accusamus et iusto odio dignissimos
+							|ducimus qui blanditiis praesentium
+					ul.portfolio__filter
+						li.portfolio__filter__item All Works 
+						li.portfolio__filter__item Print
+						li.portfolio__filter__item Identiky
+						li.portfolio__filter__item Branding
+						li.portfolio__filter__item Web
+						li.portfolio__filter__item HTML
+						li.portfolio__filter__item Wordpress
+					ul.gallery
+						li.gallery__item
+							img(src="static/images/content/gallery/1.png", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/2.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/3.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/4.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/5.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/6.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/7.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/8.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/9.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/10.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/11.jpg", alt="")
+						li.gallery__item
+							img(src="static/images/content/gallery/12.jpg", alt="")
+					.portfolio__footer
+						picture
+							img(src="static/images/general/footerportfolio.jpg", alt="")
+						.portfolio__footer__container
+							.portfolio__footer__content
+								span At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis
+								a.button_click(href="#") Start Project
+		section.team#team
+			.container
+				.team__content
+					.head
+						h2.head__title THE TEAM
+						span.head__description At vero eos et accusamus et iusto
+							| odio dignissimos ducimus qui blanditiis praesentium
+					.team__slider
+						.team__slide
+							.team__bio
+								.team__photo
+									img(src="static/images/content/sliderPhoto/photo1.png", alt="")
+								.team__info
+									.team__info__name
+										h3 Abdullah Noman 
+										span Creative Director, Code Cafe
+									.team__info__about At vero eos et accusamus et iusto odio dignissimos
+										|	ducimus qui blanditiis praesentium
+									.team__info__skills Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptatem
+										| id quo repellendus debitis consequatur ut ipsa? In exercitationem, voluptatibus unde
+										| ratione dolorum vitae iusto officia corrupti debitis quia nisi placeat sint
+										| cupiditate necessitatibus nemo maiores iste cumque doloribus. Ut nihil nam tenetur debitis
+										| voluptatum delectus odit, incidunt quae voluptate repudiandae iure dolorum eos consequuntur					
+						.team__slide
+							.team__bio
+								.team__photo
+									img(src="static/images/content/sliderPhoto/photo2.jpg", alt="")
+								.team__info
+									.team__info__name
+										h3 Billy Herrington 
+										span Boss, This Gym
+									.team__info__about At vero eos et accusamus et iusto odio dignissimos
+										|	ducimus qui blanditiis praesentium
+									.team__info__skills Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptatem
+										| id quo repellendus debitis consequatur ut ipsa? In exercitationem, voluptatibus unde
+										| ratione dolorum vitae iusto officia corrupti debitis quia nisi placeat sint
+										| cupiditate necessitatibus nemo maiores iste cumque doloribus. Ut nihil nam tenetur debitis
+										| voluptatum delectus odit, incidunt quae voluptate repudiandae iure dolorum eos consequuntur
+						.team__slide
+							.team__bio
+								.team__photo
+									img(src="static/images/content/sliderPhoto/photo3.jpg", alt="")
+								.team__info
+									.team__info__name
+										h3 Robert Downey Jr
+										span Iron Man, Avengers
+									.team__info__about At vero eos et accusamus et iusto odio dignissimos
+										|	ducimus qui blanditiis praesentium
+									.team__info__skills Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptatem
+										| id quo repellendus debitis consequatur ut ipsa? In exercitationem, voluptatibus unde
+										| ratione dolorum vitae iusto officia corrupti debitis quia nisi placeat sint
+										| cupiditate necessitatibus nemo maiores iste cumque doloribus. Ut nihil nam tenetur debitis
+										| voluptatum delectus odit, incidunt quae voluptate repudiandae iure dolorum eos consequuntur
+		section.informline
+			picture
+				img(src="static/images/general/contactrow.png", alt="")
+			.container 
+				.informline__content.column
+					span Already Loved Us? Let’s talk!
+					a.button_click(href="#contact") Contact Us
+		section.testimonials
+			.container
+				.testimonials__content
+					.head
+						h2.head__title Testimonials
+						span.head__description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					.testimonials__slider
+						.testimonials__slide
+							.testimonials__item
+								.testimonials__avatar
+									img(src="static/images/content/avatar/avatar2.jpg", alt="")
+								.testimonials__text
+									p At vero eos et accusamus et iusto odio dignissimos
+										| ducimus qui blanditiis praesentium voluptatum deleniti
+										| atque corrupti quos dolores et quas molestias excepturi
+										| sint occaecati cupiditate non provident,
+										| similique sunt in culpa qui officia deserunt mollitia.
+									h3 PARTHO
+									span FOUNDER, ARTWAYS BD
+						.testimonials__slide
+							.testimonials__item
+								.testimonials__avatar
+									img(src="static/images/content/avatar/avatar3.png", alt="")
+								.testimonials__text
+									p At vero eos et accusamus et iusto odio dignissimos
+										| ducimus qui blanditiis praesentium voluptatum deleniti
+										| atque corrupti quos dolores et quas molestias excepturi
+										| sint occaecati cupiditate non provident,
+										| similique sunt in culpa qui officia deserunt mollitia.
+									h3 GAPARTHO
+									span KAPPAFOUNDER, ARTWAYS BD
+						.testimonials__slide
+							.testimonials__item
+								.testimonials__avatar
+									img(src="static/images/content/avatar/avatar.png", alt="")
+								.testimonials__text
+									p At vero eos et accusamus et iusto odio dignissimos
+										| ducimus qui blanditiis praesentium voluptatum deleniti
+										| atque corrupti quos dolores et quas molestias excepturi
+										| sint occaecati cupiditate non provident,
+										| similique sunt in culpa qui officia deserunt mollitia.
+									h3 LOLRTHO
+									span LOLNDER, ARTWAYS BD
+		section.news#blog
+			picture
+				img(src="static/images/general/newsBackground.jpg", alt="")
+			.container
+				.news__content
+					.news__title
+						h2 LATEST NEWS
+						span At vero eos et accusamus et iusto odio dignissimos
+							| ducimus qui blanditiis praesentium
+					.news__slider
+						.news__slide
+							.news__item
+								h2.news__item__title The Landing trending Landing Pages
+								span.news__item__author by Kabir UddinUddin
+								p.news__item__info 6950 Likes - 243 Comments - 703 shares
+								.news__item__description At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									| blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+									| molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+									| culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+									| fuga. Et harum quidem rerum facilis est et expedita distinctio...
+								a.news__item__more + Read More
+						.news__slide
+							.news__item
+								h2.news__item__title Landing Pages
+								span.news__item__author by KabirKabir Uddin
+								p.news__item__info 6950 Likes - 243 Comments - 703 shares
+								.news__item__description At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									| blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+									| molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+									| culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+									| fuga. Et harum quidem rerum facilis est et expedita distinctio...
+								a.news__item__more + Read More
+						.news__slide
+							.news__item
+								h2.news__item__title The trending Landing Pages
+								span.news__item__author by Kabir Uddin
+								p.news__item__info 6950 Likes - 243 Comments - 703 shares
+								.news__item__description At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									| blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+									| molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+									| culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+									| fuga. Et harum quidem rerum facilis est et expedita distinctio...
+								a.news__item__more + Read More
+		section.price
+			.container
+				.price__content
+					.head
+						h2.head__title OUR PRICE
+						span.head__description At vero eos et accusamus
+							| et iusto odio dignissimos ducimus qui blanditiis praesentium
+					ul.price__list
+						li.price__card
+							.price__card__top
+								h3.price__card__title PREMIUM
+								.price__card__value
+									h3 $ 60
+									span Per Month
+							.price__card__bottom
+								ul.price__card__services
+									li Full Branding
+									li Project Management 
+									li Unlimited Revisions
+									li 24/7 h Service
+									li Free Domain
+									li Free Hosting
+								h3.price__card__start Let’s Start >
+						li.price__card
+							.price__card__top
+								h3.price__card__title ELITE
+								.price__card__value
+									h3 $ 70
+									span Per Month
+							.price__card__bottom
+								ul.price__card__services
+									li Full Branding
+									li Project Management 
+									li Unlimited Revisions
+									li 24/7 h Service
+									li Free Domain
+									li Free Hosting
+								h3.price__card__start Let’s Start >
+						li.price__card
+							.price__card__top
+								h3.price__card__title EXCLUSIVE
+								.price__card__value
+									h3 $ 80
+									span Per Month
+							.price__card__bottom
+								ul.price__card__services
+									li Full Branding
+									li Project Management 
+									li Unlimited Revisions
+									li 24/7 h Service
+									li Free Domain
+									li Free Hosting
+								h3.price__card__start Let’s Start >
+		section.subscribe
+			picture
+				img(src="static/images/general/formBackground.jpg", alt="")
+			.container
+				.subscribe__content
+					.head
+						h2.head__title SUBSCRIBE US 
+						span.head__description At vero eos et accusamus
+							| et iusto odio dignissimos ducimus qui blanditiis praesentium
+					form.subscribe__form
+						input(type="text" placeholder="Email Address")
+						input(type="submit" value="SUBMIT") 
+		section.contact#contact
+			.container
+				.contact__content
+					.head
+						h2.head__title CONTACT US
+						span.head__description At vero eos et accusamus
+							| et iusto odio dignissimos ducimus qui blanditiis praesentium
+					ul.contact__list
+						li.contact__card
+							picture
+								img(src="static/images/content/email.jpg", alt="")
+								i.far.fa-envelope
+							.contact__card__info
+								h2 EMAIL
+								.contact__card__link
+									a(href="mailto:hello@codecafe.com") hello@codecafe.com
+									br/
+									a(href="mailto:Personal@codecafe.com") Personal@codecafe.com
+						li.contact__card
+							picture
+								img(src="static/images/content/mark.jpg", alt="")
+								i.fas.fa-map-marker-alt
+							.contact__card__info
+								h2 OUR OFFICE
+								.contact__card__link 240 Bhatikhana, 8200 Barisal Bangladesh
+						li.contact__card
+							picture
+								img(src="static/images/content/phone.jpg", alt="")
+								i.fas.fa-phone-alt
+							.contact__card__info
+								h2 PHONE
+								.contact__card__link
+									a(href="tel:+00 11 66 99 66 44") +00 11 66 99 66 44
+									br/
+									a(href="tel:11 99 66 44 065") 11 99 66 44 065
+		section.form#submit
+			.container
+				.form__content
+					form
+						input(type="text" placeholder="Your name" name="name")
+						input(type="text" placeholder="Email address" name="mail")
+						input(type="text" placeholder="Subject" name="subject")
+						textarea(name="textarea")
+						input(type="submit" name="submit" value="SUBMIT NOW")
+		section.map
+			//- .mask
+			//- 	.map__toggle 
+			//- 		h2 FIND US ON THE MAP
+			//- 		.button__toogle
+			//- 			i.button__toogle__down
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9e96dae354de28dc81ef75249e7af0cbf44660f9f917b5de8f3208d94e5aa925&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>

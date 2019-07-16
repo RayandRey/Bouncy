@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 47px;
+    z-index: 10;
+
+    &__logo {
+        font-size: 25px;
+        font-family: "BigJohn", Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: $white;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-right: -22px;
+
+    }
+
+    &__item {
+        margin-left: 5px;
+        font-family: $OpenSans;
+        color: $white;
+        padding: 10px 22px;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        border-radius: 19px;
+
+        &:hover {
+            border-color: $white;
+        }
+
+    }
+
+}
+
+
+
+@media (max-width: 1000px) {
+    .nav {
+
+        &__list {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,214 @@
+/*-----------Заголовки--------------*/
+.head {
+    text-align: center;
+    margin-bottom: 60px;
+
+    &__title {
+        font-family: $SourceSansPro;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 0.6;
+        letter-spacing: 4px;
+        color: $fontMajor;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: $OpenSans;
+        font-size: 14px;
+        line-height: 1.79;
+        letter-spacing: 0.7px;
+        color: $fontMinor;
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 1000px ){
+    .head{
+        margin-bottom: 30px;
+        &__title{
+            margin-bottom: 25px;
+        }
+    }
+} 
+
+
+
+
+/*-----------burger menu--------------*/
+.burger__menu {
+    display: none;
+
+    &__button {
+        background: $fontMajor;
+        position: fixed;
+        top: 35px;
+        right: 30px;
+        z-index: 999;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        transition: .5s;
+
+
+        &:hover {
+            .burger__menu__lines {
+                color: $green;
+            }
+        }
+    }
+
+    &__lines,
+    &__lines::after,
+    &__lines::before {
+        position: absolute;
+        width: 25px;
+        height: 4px;
+        background: $white;
+    }
+
+    &__lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__lines::after {
+        content: '';
+        top: -9px;
+    }
+
+    &__lines::before {
+        content: '';
+        top: 9px;
+    }
+
+    &__active {
+        background: $green;
+
+        .burger__menu__button,
+        .burger__menu__lines {
+            background: transparent;
+        }
+
+        .burger__menu__lines::after {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .burger__menu__lines::before {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        .burger__menu__nav {
+            right: 0;
+        }
+
+        .burger__menu__overlay {
+            display: block;
+        }
+    }
+
+    &__nav {
+        margin-top: -75px;
+        padding: 70px;
+        position: fixed;
+        z-index: 998;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background: $fontMajor;
+        overflow-y: auto;
+        right: -100%;
+        transition: .5s;
+    }
+
+    &__link {
+        font-family: $OpenSans;
+        line-height: 3;
+        font-size: 25x;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 5px;
+        font-weight: 600;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 997;
+    }
+}
+
+
+@media (max-width: 1000px ){
+    .burger__menu{
+        display: block;
+    }
+}   
+
+/*----------- Переключение вкладок --------------*/
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        margin: 10px;
+        background: $fontMinor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background .3s;
+        cursor: pointer;
+
+        i {
+            font-size: 20px;
+            color: $white;
+        }
+
+        &:hover {
+            background: $green;
+
+            i {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px ){
+    .switch {
+    
+        &__item {
+            width: 45px;
+            height: 45px;
+            margin: 10px;
+        }
+    } 
+ } 
+
+/*--------------Маска -------------------*/
+// .mask{
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     z-index: 10;
+//     background: $black;
+//     opacity: 0.85;
+//     transition: .5s;
+// }

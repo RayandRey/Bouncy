@@ -1,0 +1,102 @@
+.contact{
+    background: #f3f3f3;
+    
+    &__content{
+        padding: 80px 0 100px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__card{
+        text-align: center;
+        width: 250px;
+        font-family: $OpenSans;
+        text-align: center;
+
+        picture{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 145px;
+            position: relative;
+            
+            img{
+                display: block;
+                transition: .5s;
+            }
+
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+                font-size: 40px;
+                opacity: 0.5;
+                transition: .5s;
+            }
+
+            &:hover{
+
+                img{
+                    transform: scale(1.1); 
+                }
+
+                i{
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__info{
+            cursor: pointer;
+            padding: 30px;
+            font-family: $OpenSans;
+            background: $white;
+
+            h2{
+                font-size: 16px;
+                letter-spacing: 0.64px;
+                color: $fontMajor;
+                margin-bottom: 25px;
+            }
+        }
+
+        &__link{
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: 0.7px;
+            color: $fontMinor;
+            text-transform: uppercase;
+
+            a{
+                color: $fontMinor;
+                
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+    }  
+}   
+
+
+@media (max-width: 750px) {
+    .contact {
+        &__content {
+            padding: 40px 0 50px;
+        }
+
+        &__list {
+            flex-flow: wrap;
+            justify-content: center;
+        }
+
+        &__card {
+            margin-bottom: 30px;
+        }
+    }
+}

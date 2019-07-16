@@ -1,0 +1,18 @@
+- var navList = [{link: "#home", name: "Home"},{link: "#about", name: "About"},{link: "#services", name: "Services"},{link: "#portfolio", name: "Portfolio"},{link: "#team", name: "Team"},{link: "#blog", name: "Blog"},{link: "#contact", name: "Contact"}]
+
+header.header
+    .container
+        nav.nav
+            a(href="").nav__logo BOUNCY
+            ul.nav__list
+                for i in navList
+                    li
+                        a(href=i.link ).nav__item=i.name
+        .burger__menu
+            a.burger__menu__button(href="#")
+                span.burger__menu__lines
+            ul.burger__menu__nav
+                for i in navList
+                    li
+                        a(href=i.link ).burger__menu__link=i.name
+            .burger__menu__overlay

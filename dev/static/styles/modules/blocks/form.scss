@@ -1,0 +1,65 @@
+.form {
+    background: $white;
+
+    &__content {
+        padding: 80px 0 100px;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-family: $OpenSans;
+            font-size: 14px;
+            letter-spacing: 0.14px;
+            color: $fontMajor;
+
+            input[type=text] {
+                width: 30%;
+                padding: 15px 20px;
+                border: 1px solid #d8dce0;
+                margin-bottom: 30px;
+            }
+
+            textarea {
+                border: 1px solid #d8dce0;
+                width: 97%;
+                height: 190px;
+                padding: 15px 20px;
+                margin-bottom: 30px;
+            }
+
+            input[type=submit] {
+                cursor: pointer;
+                width: 97%;
+                background: $green;
+                font-size: 16px;
+                padding: 20px 0;
+                letter-spacing: 0.16px;
+                color: #ffffff;
+                border: 1px solid #d8dce0;
+                transition: .5s;
+
+                &:hover{
+                    background: $fontMajor;
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .form {
+
+        &__content {
+            padding: 40px 0 50px;
+    
+            form {
+                input[type=text] {
+                    width: 97%;
+                }
+            }
+        } 
+    }
+}

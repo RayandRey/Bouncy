@@ -1,0 +1,94 @@
+.price {
+    background: #f3f3f3;
+
+    &__content {
+        padding: 80px 0 100px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__card {
+        text-align: center;
+        width: 250px;
+        height: 302px;
+        overflow: hidden;
+        font-family: $OpenSans;
+        cursor: pointer;
+        background: $white;
+
+        &__top {
+            height: 302px;
+        }
+
+        &:hover {
+            .price__card__top {
+                display: none;
+            }
+
+        }
+
+        &__title {
+            padding: 25px 0;
+            background: $green;
+            color: $white;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+        }
+
+        &__value {
+            background: $white;
+
+            h3 {
+                padding-top: 60px;
+                font-family: $SourceSansPro;
+                font-size: 42.5px;
+                font-weight: 900;
+                color: $green;
+            }
+
+            span {
+                font-size: 20px;
+                line-height: 1.4;
+                color: $fontMajor;
+            }
+        }
+
+        &__services {
+            text-align: left;
+            padding: 35px;
+            font-size: 14px;
+            line-height: 2.14;
+            letter-spacing: 0.7px;
+            color: $fontMinor;
+        }
+
+        &__start {
+            padding: 25px 0;
+            background: $green;
+            color: $white;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .price {
+        &__content {
+            padding: 40px 0 50px;
+        }
+
+        &__list {
+            flex-flow: wrap;
+            justify-content: center;
+        }
+
+        &__card {
+            margin-bottom: 30px;
+        }
+    }
+}
